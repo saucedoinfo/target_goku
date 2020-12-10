@@ -24,8 +24,7 @@ img {
 }
 
 .card {
-	width: 90%;
-	min-width: 27.0rem;
+	width: 27rem;
 	height: auto;
 	border-radius: 5rem;
 	background-color: rgb(8, 80, 46);
@@ -57,11 +56,13 @@ img {
 	box-shadow: 4px 7px 15px 1px #222;
 }
 
+
+
 .card__img {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
     display: flex;
-    justify-content: center;
+	justify-content: center;
 }
 
 .card__info {
@@ -72,3 +73,33 @@ img {
 }
 
 
+@media (min-width: 600px)
+{
+	.card {
+		width: 500px;
+		padding: 1rem;
+	}
+
+	.container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		align-items: center;
+		
+	}
+
+	.card__img {
+		width: 20%;
+		margin-top: 0rem;
+		margin-bottom: 0rem;
+	}
+
+	.card__info {
+		width: 50%;
+		margin-left: 5rem;
+		margin-top: auto;
+		margin-bottom: auto;
+		
+	}
+
+}
